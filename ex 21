@@ -1,0 +1,23 @@
+import pandas as pd
+
+# Create a sample DataFrame
+data = {
+    'Text': ['Hello World', 'Pandas is Great', 'SwAp CaSe ExAmPlE']
+}
+
+df = pd.DataFrame(data)
+
+# Specify the character column to swap cases
+column_to_swap = 'Text'
+
+# Swap the cases of the specified column
+df[column_to_swap] = df[column_to_swap].str.swapcase()
+
+# Display the DataFrame with swapped cases
+print(df)
+
+     
+                Text
+0        hELLO wORLD
+1    pANDAS IS gREAT
+2  sWaP cAsE eXaMpLe
